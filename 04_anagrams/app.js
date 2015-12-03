@@ -15,23 +15,19 @@ var lengthCheck = function (string1, string2) {
 };
 
 var isAnagram = function(string1, array) {
-  var origString1 = string1;
-  var origString2;
+
   string1 = string1.toLowerCase().split('');
   var string2;
   for (x = 0; x < array.length; x++) {
-    origString2 = array[x];
-    console.log(origString2);
     string2 = array[x].toLowerCase().split('');
     if (!lengthCheck(string1, string2)) {
-      console.log(string1 + ' & ' + string2 + "are not anagrams!");
-    } else {
+      console.log(string1.join('') + ' & ' + string2.join('') + " are not anagrams!");
+    } else if () {
       stringMatch(string1, string2);
     }
 
 
-    console.log(origString1 + ' & ' + origString2 + "are anagrams!");
-    return true;
+    console.log(string1.join('') + ' & ' + string2.join('') + " are anagrams!");
     }
   };
 
