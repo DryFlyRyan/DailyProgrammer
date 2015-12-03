@@ -1,7 +1,11 @@
+// Created By DryFlyRyan
+// This uses an array generator for a test.
+// Results are returned between the two tested numbers
+
 function arrayGenerator(length) {
   var result = [];
   for (var i = 0; i < length; i++) {
-    var num = Math.floor(Math.random() * 26 + 96).toString();
+    var num = Math.floor(Math.random() * 123).toString();
     if (num > 96) {
       num = String.fromCharCode(num);
       result.push(num);
